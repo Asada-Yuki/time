@@ -12,6 +12,9 @@
       margin: 0;
       width: 100%;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
     body {
       overflow: hidden;
@@ -107,7 +110,7 @@
 
       var styleSource = '#table {'
                       + 'height: '+(vmin*5*2.8+60).toFixed(2)+'px;'
-                      + 'margin: '+((winH-vmin*5*2.8-60)/2).toFixed(2)+'px auto;'
+                      + 'margin: '+((winH-vmin*5*2.8-60)/2/5).toFixed(2)+'px auto;'
                       + 'font-size: '+vmin.toFixed(2)+'px;'
                       + 'line-height: '+(1.8*vmin.toFixed(2))+'px;'
                       + '}'

@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>只言片语</title>
   <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
     @font-face {
     font-family: "Unica One";
     src: url("UnicaOne.woff2") format("woff2");
@@ -14,9 +19,13 @@
     html,
     body {
       margin: 0;
+      padding: 0;
       width: 100%;
       height: 100%;
       font-family: "Unica One";
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     body {
       overflow: hidden;
@@ -31,7 +40,10 @@
       white-space: nowrap;
       word-break: keep-all;
       display: inline-block;
+      margin: 0;
     }
+
+    
   </style>
 </head>
 <body>
@@ -41,6 +53,7 @@
   </div>
   <script src="./src/functions.js"></script>
   <script>
+    
     /** 用来显示时钟的各种数字。如果无此参数或者序号为零，则均显示阿拉伯数字。 */
     var nums = ['Zero',
       'One',           'Two',           'Three',        'Four',
@@ -97,12 +110,12 @@
 
       table.style.width = (winW*0.9).toFixed(2)+'px'
       table.style.height = (winH*0.9).toFixed(2)+'px'
-      table.style.margin = (winH*0.05).toFixed(2)+'px '+(winW*0.05).toFixed(2)+'px'
+      table.style.margin = '0 auto'
       table.style.fontSize = conFontSize+'px'
       var styleSource = '#table {'
                       + 'width: '+(vmin*0.9).toFixed(2)+'px;'
                       + 'height: '+(vmin*0.9).toFixed(2)+'px;'
-                      + 'margin: '+(winH*0.05).toFixed(2)+'px '+(winW*0.05).toFixed(2)+'px;'
+                      + 'margin: 0 auto;'
                       + 'font-size: '+conFontSize+'px;'
                       + '}'
 
